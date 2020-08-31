@@ -6,8 +6,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import LoginCreate from "../../Components/LoginCreate";
 import { UserContext } from "../../UserContext";
 
-// import { Container } from './styles';
-
 function Login() {
   const { login } = useContext(UserContext);
   if (login === true) return <Navigate to="/conta" />;
