@@ -7,6 +7,8 @@ import { UserStorage } from "./UserContext";
 
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import User from "./Pages/User";
+import ProtectedRoute from "./Components/Helper/ProtectedRoute";
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login/*" element={<Login />} />
+            <Route path="login/*" element={<Login />} />
+            <ProtectedRoute path="conta/*" element={<User />} />
           </Routes>
           <Footer />
         </UserStorage>
