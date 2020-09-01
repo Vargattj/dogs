@@ -10,6 +10,10 @@ const types = {
     message:
       "A senha deve ter no mínimo 6 caracteres e conter um caractter maísculo, um minúsculo e um digito.",
   },
+  number: {
+    regex: /^\d+$/,
+    message: "Utiliza apenas numeros.",
+  },
 };
 
 function UseForm(type) {
