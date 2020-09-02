@@ -2,8 +2,8 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-function Feed() {
-  return <div>feed</div>;
+function Loading() {
+  return <div>loading</div>;
 }
 
-export default Feed;
+export default Loading;
