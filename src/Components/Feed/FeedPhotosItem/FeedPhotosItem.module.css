@@ -34,7 +34,7 @@
     content: '';
     display: inline-block;
     margin-right: .25rem;
-    background: url('../../../../Assets/visualizacao.svg');
+    background: url('../../../Assets/visualizacao.svg');
 }
 @media (max-width: 40rem) {
   .photo:nth-child(2) {

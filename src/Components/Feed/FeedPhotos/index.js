@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import FeedPhotosItem from "./FeedPhotosItem";
+import FeedPhotosItem from "../FeedPhotosItem";
 import useFetch from "../../../Hooks/useFetch";
 import Error from "../../../Components/Helper/Error";
 import Loading from "../../../Components/Helper/Loading";
 import { PHOTOS_GET } from "../../../api";
 import styles from './FeedPhotos.module.css'
 
-function FeedPhotos() {
+function FeedPhotos({setModalPhoto}) {
   const { data, loading, error, request } = useFetch();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function FeedPhotos() {
     return (
       <ul className={`${styles.feed} animeLeft`}>
         {data.map((photo) => {
-          return <FeedPhotosItem key={photo.id} photo={photo} />;
+          return <FeedPhotosItem setModalPhoto={setModalPhoto} key={photo.id} photo={photo} />;
         })}
       </ul>
     );
