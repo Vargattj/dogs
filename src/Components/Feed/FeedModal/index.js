@@ -14,8 +14,6 @@ function FeedModal({ photo, setModalPhoto }) {
   }, [photo, request]);
 
   function handleOutSideClick(e){
-    console.log('Target', e.target);
-    console.log('Current Target', e.currentTarget);
     if(e.target === e.currentTarget) setModalPhoto(null)
   }
   return (
