@@ -1,5 +1,6 @@
 import React from "react";
 import Feed from '../../Components/Feed/index';
+import Loading from "../../Components/Helper/Loading";
 
 
 function Home() {
